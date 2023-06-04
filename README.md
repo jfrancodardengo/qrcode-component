@@ -11,7 +11,7 @@ This project is a QR Code component developed for studying HTML5 and CSS3 for de
 
 ## How to access the system
 
-## [Google](https://www.google.com.br)
+## [Live preview](https://jfrancodardengo.github.io/qrcode-component/)
 
 <h2 id="autor"> Author </h2>
 <img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/60450451?s=460&u=b5f6c306e7760f9d0b89839c5e0b6b105db684a0&v=4" width="100px;" alt=""/>

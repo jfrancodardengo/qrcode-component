@@ -1,42 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
 }
 
+/* NOVO: variáveis de cor (ponto 10) */
+:root {
+  --color-bg: hsl(212, 45%, 89%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-title: hsl(218, 44%, 22%);
+  --color-text: hsl(220, 15%, 55%);
+}
+
 body {
-  background-color: hsl(212, 45%, 89%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
   font-family: "Outfit", sans-serif;
-  max-width: 1440px;
 }
 
-div {
-  background-color: hsl(0, 0%, 100%);
-  width: 22%;
-  margin: 10% auto;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
+main {
+  flex: 1;
+  display: grid;     
+  place-items: center;
+  padding: 1rem;
 }
 
-div,
-img {
-  border-radius: 15px;
-}
-
-img {
+.card {
   width: 100%;
-}
-
-h2 {
-  color: hsl(218, 44%, 22%);
+  max-width: 20rem;
+  padding: 1rem;
+  background-color: var(--color-white);
+  border-radius: 1.25rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-p {
-  font-size: 15px;
-  color: hsl(220, 15%, 55%);
-  text-align: center;
+.card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.625rem;
+
 }
 
-img ~ * {
-  margin-top: 20px;
+.card__title {
+  padding-inline: 1rem;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  color: var(--color-title);
+}
+
+.card__text {
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.9375rem;  
+  line-height: 1.4;
+  color: var(--color-text);
 }
